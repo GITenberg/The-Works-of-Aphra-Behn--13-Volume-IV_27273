@@ -1,0 +1,204 @@
+body {margin-left: 10%; margin-right: 10%;}
+
+hr {width: 80%; margin-top: 1em; margin-bottom: 1em;}
+hr.mid {width: 50%; margin-top: 2em; margin-bottom: 2em;}
+hr.tiny {width: 20%;}
+
+div.mynote a, table.toc a, div.detail a {text-decoration: none;}
+
+a.tag {text-decoration: none; vertical-align: .3em; font-size: 80%;
+line-height: 0em;}
+a.notes, a.comm {text-decoration: none; color: inherit;
+background-color: inherit;}
+a.notes {border-bottom: thin dashed #666;}
+a.comm {border-bottom: thin solid #999;}
+a.crossref {padding-left: 4em; white-space: nowrap;}
+
+em {font-style: normal; font-weight: normal;} /* de-italicize */
+
+
+/* general */
+
+
+h1, h2, h3, h4, h5, h6 {text-align: center; font-style: normal;
+font-weight: normal; line-height: 1.5; margin-top: .5em;
+margin-bottom: .5em;}
+
+h1 {font-size: 200%;}
+h2 {font-size: 150%;}
+h3 {font-size: 125%;}
+h4 {font-size: 115%;}
+div.intro h4, div.play h4, div.textnote h4 {margin-top: 2em;
+margin-bottom: .75em; font-variant: small-caps;}
+h5 {font-size: 100%;}
+h6 {font-size: 85%;}
+
+div.verse, div.song {margin-top: .5em; clear: right;}
+div.song {margin-left: 2em;}
+
+p {text-align: left; margin-top: .5em; margin-bottom: 0em;
+line-height: 1.2;}
+p.center {text-align: center;}
+p.right {text-align: right;}
+p.rightside {margin-left: 50%;}
+
+p.illustration {text-align: center; margin-top: 1em; margin-bottom: 1em;}
+
+div.inset {padding-left: 1em; margin-top: 0em; margin-bottom: 0em;}
+p.inset {padding-left: 1em;}
+p.halfway {padding-left: 40%;}
+p.verse {margin-left: 4em; font-size: 90%;}
+
+
+/* detailed contents */
+
+div.detail {padding: 1em 2em; margin: 1em 2em 2em;
+font-family: sans-serif; font-size: 90%;}
+div.detail p {margin-left: 2em; text-indent: -2em;}
+div.detail p.inset {padding: 0; text-indent: -1em; margin-top: .25em;}
+
+
+/* introductory */
+
+div.intro {margin-top: 3em; margin-bottom: 3em;}
+
+
+/* notes */
+
+div.textnote {font-size: 95%; margin: 3em 2em;}
+div.textnote div.verse, div.endnote div.verse {margin: .5em 3em;}
+
+div.textnote p {line-height: normal; clear: right;}
+div.textnote p.notehead {margin-top: 1em; margin-bottom: .5em;
+margin-left: -1em; font-weight: bold;}
+
+p.footnote {margin: 1em 2em; font-size: 95%; line-height: normal;}
+
+
+/* plays */
+
+div.play {margin-top: 3em; margin-bottom: 3em; max-width: 30em;}
+
+h3.act {text-align: center; margin-top: 3em; margin-bottom: 0;
+font-size: 115%; line-height: 1.5em;
+font-weight: normal; font-style: normal;}
+div.play h4.scene {text-align: center; font-size: 104%;
+padding-top: 1em; line-height: 1.2; font-variant: normal;
+font-weight: normal; font-style: italic;}
+div.play h3.act + h4.scene {margin-top: 0;}
+div.play h5 {margin-top: 1em; margin-right: 30%; text-align: center;}
+
+div.play p, div.play div.verse {clear: right; padding-top: .01em;}
+div.play p.continue, div.play div.verse.continue {margin-top: 0;}
+
+p.letter {margin-left: 1em; text-indent: -1em; font-style: italic;}
+
+span.speaker {font-style: italic; padding-right: .25em;}
+
+p.entrance {margin-left: 2em; margin-right: 2em; text-align: center;
+font-style: italic; margin-top: .75em;}
+p.entrance.long {text-align: left; margin-left: 2em; text-indent: -1em;}
+div.verse + p.entrance {padding-top: .25em;}
+
+div.song {font-style: italic;}
+div.song.plain {font-style: normal;}
+
+div.verse p, div.song p {margin-top: 0em; margin-left: 2em;
+text-indent: -2em;}
+
+div.verse p.speaker {padding-top: .5em;}
+div.verse span.stagedir, div.song span.stagedir {margin-bottom: 0;}
+
+div.song p.stanza {margin-top: .5em;}
+div.song p.indent {margin-left: 3em;}
+div.song p.indent2, div.verse p.indent2 {margin-left: 4em;}
+div.song p.indent4 {margin-left: 6em;}
+
+div.cast {margin: 1em 2em; font-size: 92%;}
+div.cast p {margin-left: 1.5em; text-indent: -1.5em; margin-top: 0;}
+div.cast p.header {margin-top: .75em; margin-bottom: .75em;
+text-align: center; font-weight: normal;}
+
+p.stagedir, div.verse p.stagedir {font-style: italic; margin-left: 3em;
+margin-right: 2em; margin-top: .5em; text-indent: -1em;}
+
+span.stagedir {float: right; clear: right; padding-left: 2em;
+text-indent: 0em; font-style: italic; margin-bottom: .5em;}
+span.stagedir.continue, div.verse span.stagedir {margin-bottom: 0;}
+p.entrance span.stagedir, div.song span.stagedir {font-style: normal;}
+span.stagedir:before, p.stagedir:before {font-style: normal;
+content: "[";}
+
+span.aside {font-style: italic; padding-right: .5em;}
+span.aside:before {font-style: normal; content: "[";}
+span.aside:after {font-style: normal; content: "]";}
+
+/* tables */
+
+table {margin-left: auto; margin-right: auto; margin-top: 1em;
+margin-bottom: 1em;}
+
+td {vertical-align: top; text-align: left; padding: .1em;}
+
+td.number {text-align: right;}
+td.toppad {padding-top: .5em;}
+
+table.toc td.number {vertical-align: bottom; padding-left: 2em;}
+table.toc p {margin-top: 0em; margin-left: 2em; text-indent: -2em;
+line-height: normal;}
+
+table.cast {margin: 1em 2em; font-size: 92%; border-collapse: collapse;}
+table.cast td {vertical-align: middle; padding: 0 .5em;}
+table.cast td.header {text-align: center; padding: .5em;}
+table.cast td.toppad {padding-top: .5em;}
+table.cast td.bracket {padding-left: 1em;
+background-position: center left; background-repeat: no-repeat;
+background-image: url("images/bracket_small.gif");}
+table.cast td.bracket.flip
+{background-image: url("images/bracket_small_rt.gif");}
+table.cast p {margin-left: 1.5em; text-indent: -1.5em;
+line-height: normal; margin-top: 0;}
+
+table.triplet, table.inner {margin-left: 0; margin-top: 0;
+margin-bottom: 0; border-collapse: collapse;
+font-style: inherit; font-size: inherit;}
+table.inner td {padding: 0;}
+table.triplet td {padding: 0 1em 0 0;
+background-position: center right; background-repeat: no-repeat;
+background-image: url("images/bracket3.gif");}
+
+
+
+/* text formatting */
+
+.firstword {font-variant: small-caps;}
+div.song span.firstword {font-variant: normal;
+text-transform: uppercase; letter-spacing: .1em;}
+
+.smallroman, .smaller {font-size: 75%;}
+.smallcaps {font-variant: small-caps; font-style: normal;}
+.extended {letter-spacing: 0.2em;}
+.ital {font-style: italic;}
+
+
+/* my additions */
+
+ins.correction {text-decoration: none; border-bottom: thin dotted red;}
+
+span.pagenum {position: absolute; right: 3%; font-size: 90%;
+font-weight: normal; font-style: normal; text-align: right;
+text-indent: 0em;}
+span.pagenum.notes {color: #666; background-color: #FFF;
+font-size: 85%; border: none;}
+.pagenum.notes:before {content: "[";}
+.pagenum.notes:after {content: "]";}
+
+.mynote {background-color: #DDE; color: #000; font-family: sans-serif;
+font-size: 90%;}
+
+div.mynote {margin: 1em 5%; padding: .5em 1em 1em;}
+p.mynote {margin: 1em 5%; padding: 1em;}
+
+div.endnote {padding: .5em 1em 1em; margin: 1em; border: 3px ridge #A9F;
+font-family: sans-serif; font-size: 90%;}
+
