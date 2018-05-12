@@ -27,6 +27,8 @@ creator:
     gutenberg_agent_id: '9866'
     url: http://www.gutenberg.org/2009/agents/9866
 description: ''
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/27273#The-Works-of-Aphra-Behn--13-Volume-IV
 gutenberg_issued: '2008-11-15'
 gutenberg_type: Text
 identifiers:
